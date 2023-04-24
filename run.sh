@@ -50,6 +50,9 @@ tools() {
     brew install --cask wpsoffice-cn
     brew install --cask betterzip
     brew install --cask safeincloud-password-manager
+    brew install --cask wechat
+    brew install --cask qq
+    brew install --cask wechatwork
 }
 
 finish() {
@@ -70,9 +73,9 @@ write() {
 }
 
 echo "开始配置"
-init
-android
-other
-tools
-finish
+# init
+# android
+# other
+# tools
+# finish
 echo "结束配置"
