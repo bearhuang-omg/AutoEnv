@@ -5,6 +5,7 @@ init() {
     /bin/bash -c "$(curl -fsSL https://gitee.com/ineo6/homebrew-install/raw/master/install.sh)"
     brew install git
     brew install git-lfs
+    brew install --cask visual-studio-code
     ohmyzsh
 }
 
@@ -24,14 +25,44 @@ ohmyzsh() {
 }
 
 android() {
+    brew install --cask android-studio
     brew install --cask homebrew/cask-versions/adoptopenjdk8
-    brew install --cask android-sdk
-    brew install --cask android-ndk
+    # brew install --cask android-sdk
+    # brew install --cask android-ndk
     brew install gradle
     brew install android-platform-tools
+    brew install --cask flutter
+}
+
+other() {
+    brew install nodejs
+    brew install npm
+    brew install python3
+}
+
+tools() {
+    brew install --cask snipaste
+    brew install --cask utools
+    brew install --cask google-chrome
+    brew install --cask wpsoffice-cn
+}
+
+#功能：往环境变量文件里面写入内容，如果文件里面已经存在，则不写入
+write() {
+    content=$1
+    # 环境变量文件
+    envFile=~/.zshrc
+    if cat $envFile | grep "$content" >/dev/null; then
+        echo "已经存在配置${content},不写入"
+    else
+        echo "写入配置${content}"
+        echo "${content}" >>$envFile
+    fi
 }
 
 echo "开始配置"
-# init
-# android
+init
+android
+other
+tools
 echo "结束配置"
