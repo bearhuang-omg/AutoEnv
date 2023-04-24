@@ -38,6 +38,8 @@ other() {
     brew install nodejs
     brew install npm
     brew install python3
+    # 博客工具
+    npm install hexo-cli -g
 }
 
 tools() {
@@ -45,6 +47,7 @@ tools() {
     brew install --cask utools
     brew install --cask google-chrome
     brew install --cask wpsoffice-cn
+    brew install --cask betterzip
 }
 
 #功能：往环境变量文件里面写入内容，如果文件里面已经存在，则不写入
