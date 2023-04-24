@@ -52,6 +52,10 @@ tools() {
     brew install --cask safeincloud-password-manager
 }
 
+finish() {
+    brew cleanup
+}
+
 #功能：往环境变量文件里面写入内容，如果文件里面已经存在，则不写入
 write() {
     content=$1
@@ -70,4 +74,5 @@ init
 android
 other
 tools
+finish
 echo "结束配置"
