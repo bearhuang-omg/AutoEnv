@@ -53,6 +53,7 @@ tools() {
     brew install --cask wechat
     brew install --cask qq
     brew install --cask wechatwork
+    brew install --cask notion
 }
 
 finish() {
