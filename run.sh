@@ -2,8 +2,8 @@
 
 #一些基础的软件
 init() {
-    # /bin/bash -c "$(curl -fsSL https://gitee.com/ineo6/homebrew-install/raw/master/install.sh)"
-    # brew install git
+    /bin/bash -c "$(curl -fsSL https://gitee.com/ineo6/homebrew-install/raw/master/install.sh)"
+    brew install git
     brew install git-lfs
 }
 
