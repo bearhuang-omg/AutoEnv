@@ -26,5 +26,6 @@ ohmyzsh() {
 
 
 echo "开始配置"
-init
+# init
+source Android.sh
 echo "结束配置"
