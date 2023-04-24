@@ -23,9 +23,15 @@ ohmyzsh() {
     git config --add oh-my-zsh.hide-status 1
 }
 
-
+android() {
+    brew install --cask homebrew/cask-versions/adoptopenjdk8
+    brew install --cask android-sdk
+    brew install --cask android-ndk
+    brew install gradle
+    brew install android-platform-tools
+}
 
 echo "开始配置"
 # init
-source Android.sh
+# android
 echo "结束配置"
