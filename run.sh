@@ -74,9 +74,9 @@ write() {
 }
 
 echo "开始配置"
-# init
-# android
-# other
-# tools
-# finish
+init
+android
+other
+tools
+finish
 echo "结束配置"
