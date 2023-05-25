@@ -54,6 +54,7 @@ tools() {
     brew install --cask qq
     brew install --cask wechatwork
     brew install --cask notion
+    brew install --cask android-file-transfer
 }
 
 finish() {
